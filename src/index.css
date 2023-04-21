@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url("../public/assets/fonts/LeagueSpartan-Bold.ttf"), 
+  url("../public//assets/fonts/LeagueSpartan-Medium.ttf"),
+  url("../public//assets/fonts/LeagueSpartan-Regular.ttf"),
+  url("../public//assets/fonts/LeagueSpartan-SemiBold.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: "Rubik";
+}
+
+body {
+  background-color: #EEF6F6;
+}
+
+.header {
+  width: 100%;
+  background-color: #5BA4A4;
+  height: 157px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-img {
+  width: 100%;
+  height: 157px;
+  background-image: url('../public/assets/images/bg-header-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.job-card {
+  box-shadow: 0px 20px 20px rgba(91, 164, 164, 0.1);
+}
+
+@media (min-width: 768px) {
+  .header-img {
+    background-image: url('../public/assets/images/bg-header-desktop.svg');
+  }
 }
