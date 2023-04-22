@@ -41,10 +41,144 @@ body {
 
 .job-card {
   box-shadow: 0px 20px 20px rgba(91, 164, 164, 0.1);
+  animation-name: fade-in;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+}
+
+
+
+.job-spec-tag {
+  height: 32px;
+  width: 80px;
+  Padding :11px, 10px, 7px, 10px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    90deg, #e7edf1 0px, #f1f6fa 200px, #e7edf1 400px
+  );
+  background-size: 1200px;
+  animation: shimer 2s linear infinite;
+
+}
+
+.job-text {
+  width: 147px;
+  height: 17px;
+  border-radius: 2px;
+  background-color: #cccccc;
+  background-image: linear-gradient(
+    90deg, #e7edf1 0px, #f1f6fa 200px, #e7edf1 400px
+  );
+  background-size: 1200px;
+  animation: shimer 2s linear infinite;
+}
+
+.job-company {
+  width: 70px;
+  height: 25px;
+  background-color: #cccccc;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    90deg, #e7edf1 0px, #f1f6fa 200px, #e7edf1 400px
+  );
+  background-size: 1200px;
+  animation: shimer 2s linear infinite;
+}
+
+.job-list-tag {
+  width: 53px;
+  height: 24px;
+  background-color: #cccccc;
+  padding: 8px;
+  background-image: linear-gradient(
+    90deg, #e7edf1 0px, #f1f6fa 200px, #e7edf1 400px
+  );
+  background-size: 1200px;
+  animation: shimer 2s linear infinite;
+}
+
+.job-role {
+  width: 147px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: #cccccc;
+  padding: 8px;
+  background-image: linear-gradient(
+    90deg, #e7edf1 0px, #f1f6fa 200px, #e7edf1 400px
+  );
+  background-size: 1200px;
+  animation: shimer 2s linear infinite;
+}
+
+.job-img {
+  background-color: #cccccc;
+  background-image: linear-gradient(
+    90deg, #e7edf1 0px, #f1f6fa 200px, #e7edf1 400px
+  );
+  background-size: 1200px;
+  animation: shimer 2s infinite linear;
 }
 
 @media (min-width: 768px) {
   .header-img {
     background-image: url('../public/assets/images/bg-header-desktop.svg');
+  }
+
+  .job-spec-tag {
+    height: 32px;
+    width: 91px;
+    padding-block: 8px;
+    border-radius: 4px;
+
+  }
+
+  .job-text {
+    width: 56px;
+    height: 17px;
+    border-radius: 2px;
+  }
+  
+  .job-company {
+    width: 186px;
+    height: 25px;
+    border-radius: 4px;
+  }
+
+  .job-list-tag {
+    width: 79px;
+    height: 24px;
+    background-color: #cccccc;
+    padding: 8px;
+  }
+
+  .job-role {
+    width: 255px;
+    height: 24px;
+    border-radius: 4px;
+  }
+
+}
+
+
+@keyframes shimer {
+  0% {
+    background-size: -400px;
+  }
+  50% {
+    background-size: 700px;
+  }
+  100% {
+    background-size: 700px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.5;
+    margin-left: -10px;
+  }
+  50% {
+    opacity: 1;
+    margin-left: 0px;
   }
 }
