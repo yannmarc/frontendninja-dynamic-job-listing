@@ -14,7 +14,7 @@ const useFetchJobs =  (apiEndpoint) => {
             }
         }
         fetchJobs(apiEndpoint);
-    }, [])
+    })
 
     return [jobs, setJobs]
 }
