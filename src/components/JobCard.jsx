@@ -1,11 +1,11 @@
 import React, { Fragment, useContext } from "react";
 import { EndPointContext } from "../App";
 
-const JobCard = ({ job }) => {
+const JobCard = ({ job, setResults }) => {
   const languages = job.languages;
   const tools = job.tools;
 
-  const { endPoint, setEndPoint } = useContext(EndPointContext);
+  const { setEndPoint } = useContext(EndPointContext);
 
   const handleEndPoint = (extraRef, query) => {
     switch (query) {
