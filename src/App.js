@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 // import { FilterProvider } from "./context/FilterContext";
 
 export const EndPointContext = createContext();
+export const JobsContext = createContext();
 
 
 
